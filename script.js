@@ -60,12 +60,12 @@ generateEl.addEventListener('click', () => {
     typesArr.forEach(type => {
       const funcName = Object.keys(type)[0];
       // console.log('funcName: ', funcName); //lower upper number symbol
-      generatedPassword += randomFunc[funcName]();
+      generatePassword += randomFunc[funcName]();
     });
   }
-
-
-
+  const finalPassword = (generatePassword.slice(0, length));
+  return finalPassword;
+  
 }
 
 
